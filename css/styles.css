@@ -176,8 +176,11 @@ header .container {
 .skill .item:not(:last-child) {
 	margin-right: 30px;
 }
-.ido {
-	background-color: red;
+.icon-bcg {
+	background-color: #F5F4FA;
+	border-radius: 4px;
+	padding: 25px 100px;
+	margin-bottom: 30px;
 }
 .skill .title {
 	margin: 0 auto;
@@ -273,6 +276,36 @@ header .container {
   font-size: 16px;
   line-height: 1.18;
   color: var(--secondary-text-color);
+}
+.action {
+	display: flex;
+	margin-top: 16px;
+	padding: 0 32px;
+}
+.action .list {
+	list-style: none;
+	gap: 0;
+	margin: 0;
+	padding: 0;
+}
+.action .link {
+	display: block;
+	height: 44px;
+	width: 44px;
+	padding: 12px;
+	border-radius: 50%;
+}
+.action .link:hover {
+	background-color: #2196F3;
+}
+.action .item-icon:not(:last-child) {
+	margin-right: 10px;
+}
+.action .icon {
+	fill: #AFB1B8;
+}
+.action .link .icon:hover {
+	fill: var(--white-color);
 }
 
 /* Portfolio.html */
