@@ -95,6 +95,12 @@ header .container {
   line-height: 1.33;
   color: var(--secondary-text-color);
 }
+.auth .icon {
+	margin-right: 10px;
+}
+.auth .icon:hover {
+	fill: #2196F3;
+}
 
 /* Section Hero */
 
@@ -472,6 +478,21 @@ footer .container {
 .logotype .style {
   color: var(--accent-color);
 }
+.logo-cont {
+	display: flex;
+	align-items: baseline;
+	margin: 0 auto;
+}
+.logo-cont .title {
+	margin: 0;
+	margin-left: 156px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--white-color);
+}
 
 /* Address */
 
@@ -485,6 +506,7 @@ footer .container {
 }
 .address .list {
 	margin: 0;
+	margin-right: 100px;
 	padding-left: 0;
   list-style: none;
 }
@@ -496,4 +518,30 @@ footer .container {
 }
 .address .item:not(:last-child) {
 margin-bottom: 9px;
+}
+.join-list {
+	display: flex;
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+}
+.join-list .item {
+	margin: 0 auto;
+	padding-top: 12px;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.1);;
+}
+.join-list .item:not(:last-child) {
+	margin-right: 10px	;
+}
+.join-list .icon-link {
+		padding: 12px;
+}
+.join-list .icon {
+	fill: var(--white-color)
+}
+.join-list .item:hover {
+	background-color: #2196F3;
 }
