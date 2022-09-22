@@ -61,6 +61,11 @@ header .container {
 .nav .link.current {
   color: var(--accent-color);
 }
+.nav .line {
+	height: 4px;
+	border-radius: 2px;
+background-color: #188ce8;
+}
 .nav .link {
 	display: flex;
 	padding-top: 32px;
@@ -71,6 +76,7 @@ header .container {
   line-height: 1.33;
   color: var(--primary-text-color);
 }
+
 .auth .link:hover,
 .auth .link:focus {
   color: var(--accent-color);
