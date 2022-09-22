@@ -34,15 +34,17 @@ img {display: block;}
 /* Header Navigation */
 
 header .container {
+	max-width: 1600px;
 	margin: 0 auto;
-	width: 1200px;
-	padding-left: 15px;
-	padding-right: 15px;
 	border-bottom: 1px solid #ECECEC;
 }
 .nav {
 	display: flex;
 	align-items: center;
+	margin: 0 auto;
+		width: 1200px;
+		padding-left: 15px;
+		padding-right: 15px;
 }
 .nav .list {
 	display: flex;
@@ -61,13 +63,20 @@ header .container {
 .nav .link.current {
   color: var(--accent-color);
 }
-.nav .line {
+.nav .link.current::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: block;
+	width: 100%;
 	height: 4px;
 	border-radius: 2px;
-background-color: #188ce8;
+	background-color: var(--accent-color);
 }
 .nav .link {
-	display: flex;
+	position: relative;
+	display: block;
 	padding-top: 32px;
 	padding-bottom: 32px;
   text-decoration: none;
@@ -77,10 +86,6 @@ background-color: #188ce8;
   color: var(--primary-text-color);
 }
 
-.auth .link:hover,
-.auth .link:focus {
-  color: var(--accent-color);
-}
 .auth {
 	margin-top: 0;
 	margin-bottom: 0;
@@ -93,7 +98,9 @@ background-color: #188ce8;
 	margin-right: 50px;
 }
 .auth .link {
-	display: block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	padding-top: 32px;
 	padding-bottom: 32px;
   text-decoration: none;
@@ -104,10 +111,15 @@ background-color: #188ce8;
 }
 .auth .icon {
 	margin-right: 10px;
+	fill: #757575;
 }
 .auth .link:hover svg use,
 .auth .link:focus svg use {
 	fill: #2196F3;
+}
+.auth .link:hover,
+.auth .link:focus {
+	color: var(--accent-color);
 }
 
 /* Section Hero */
@@ -156,6 +168,14 @@ background-color: #188ce8;
 }
 .hero .button:hover {
   background-color: #188ce8;
+}
+.backdrop {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1600px;
+	height: 1024px;
+	background: rgba(0, 0, 0, 0.2);
 }
 
 /* Section Skill */
@@ -239,6 +259,28 @@ background-color: #188ce8;
 	margin: 0 auto;
 	padding-left: 0;
   list-style: none;
+}
+.service .item {
+	position: relative;
+}
+.service .box-text {
+	position: absolute;
+	bottom: 0;
+	display: block;
+	width: 370px;
+	height: 70px;
+	padding: 27px 0;
+	background: rgba(47, 48, 58, 0.8);
+}
+.service .text {
+	margin: 0 auto;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	text-align: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--white-color);
 }
 
 /* Section Developer */

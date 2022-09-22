@@ -18,7 +18,7 @@
       <nav class="nav">
         <a class="logo" href="index.html"><span class="style">Web</span>Studio</a>
         <ul class="list">
-          <li class="item"><div class="line"></div><a class="link current" href="index.html">Студія</a></li>
+          <li class="item"><a class="link current" href="index.html">Студія</a></li>
           <li class="item"><a class="link" href="portfolio.html">Портфоліо</a></li>
           <li class="item"><a class="link" href="">Контакти</a></li>
         </ul>
@@ -40,7 +40,8 @@
 			<section class="hero">
 				<div class="container">
         <h1 class="title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-        <button class="button" type="button">Замовити послугу</button>
+				<button class="button" type="button">Замовити послугу</button>
+				<div class="backdrop"></div>
 				</div>
 			</section>
 
@@ -81,11 +82,17 @@
         <h2 class="title">Чим ми займаємося</h2>
         <ul class="list">
           <li class="item">
-            <img src="./image/box1.jpg" alt="програмування" width="370" /></li>
+            <img src="./image/box1.jpg" alt="програмування" width="370" />
+						<div class="box-text"><p class="text">ДЕСКТОПНІ ДОДАТКИ</p></div>
+					</li>
+					<li class="item">
+            <img src="./image/box2.jpg" alt="створення аплікацій" width="370" />
+					<div class="box-text"><p class="text">МОБІЛЬНІ ДОДАТКИ</p></div>
+				</li>
           <li class="item">
-            <img src="./image/box2.jpg" alt="створення аплікацій" width="370" /></li>
-          <li class="item">
-            <img src="./image/box3.jpg" alt="веб-дизайн" width="370" /></li>
+            <img src="./image/box3.jpg" alt="веб-дизайн" width="370" />
+					<div class="box-text"><p class="text">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p></div>
+				</li>
         </ul>
 				</div>
       </section>
@@ -272,5 +279,6 @@
 			</div>
 			</div>
     </footer>
+		<script src="./js/modal.js"></script>
   </body>
 </html>
